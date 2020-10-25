@@ -1,0 +1,54 @@
+:root{
+    /* Primary palette */
+    --primary-blue:#203864;
+    --primary-red:#852a2a;
+    --primary-purple: #7030a0;
+    --primary-orange:#7f6000;
+
+    /*Secondary palette  */
+    --secondary-blue:#2b4154;
+    --secondary-red:#e64840;
+    --secondary-purple: #8e73e2;
+    --secondary-orange:#d25307;
+}
+
+html, body{
+    /*--------- image on full page--------------------------------- */
+    background-image: url(/assets/images/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+
+ul{
+    display: inline-flex;
+    flex-direction: column;
+    margin: 100px 0;
+}
+
+li, a{
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.nav-list li{
+    display: inline;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--primary-blue);
+    text-align: center;
+}
