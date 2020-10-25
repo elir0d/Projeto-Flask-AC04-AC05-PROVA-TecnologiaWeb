@@ -14,7 +14,7 @@
 
 html, body{
     /*--------- image on full page--------------------------------- */
-    background-image: url(/assets/images/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
+    background-image: url('/static/img/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg'); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
