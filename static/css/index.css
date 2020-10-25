@@ -46,9 +46,30 @@ li, a{
 
 .nav-list li{
     display: inline;
-    margin: 10px;
+    margin: 15px 70px auto;
     padding: 20px;
     border-radius: 10px;
-    background-color: var(--primary-blue);
     text-align: center;
+    border: 2px solid rgba(245, 222, 179, 0);
+}
+
+.nav-list li:hover{
+    transform: scale(1.1, 1.1);
+    border: 2px solid var(--secondary-red);
+}
+
+.competidores{
+    background-color: var(--primary-blue);
+}
+
+.campeonato{
+    background-color: var(--primary-red);
+}
+
+.vitorias{
+    background-color: var(--primary-purple);
+}
+
+.circuitos{
+    background-color: var(--primary-orange);
 }
