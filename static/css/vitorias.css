@@ -14,7 +14,7 @@
 
 html, body{
     /*--------- image on full page--------------------------------- */
-    background-image: url(/static/img/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
+    background-image: url(/static/img/fundo02.png); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -26,6 +26,7 @@ html, body{
     margin: 0;
 
     overflow-x: hidden;
+    scroll-padding-top: 75px;
 }
 
 
@@ -35,9 +36,15 @@ html, body{
     align-items: center;
     padding: 5px;
     width: 100%;
-    position: fixed;
+    /* position: fixed; */
     top: 0;
+    margin: 0 auto;
 
+}
+
+.logo{
+    display: inline-flex;
+    max-width: 3900px;
 }
 
 li, a{
@@ -45,7 +52,7 @@ li, a{
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-    list-style-type: none;
+    /* list-style-type: none; */
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -77,4 +84,180 @@ li, a{
 
 .circuitos{
     background-color: var(--primary-orange);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+}
+
+.content-left{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+.label{
+    position: fixed;
+    color: white;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: var(--primary-red);
+    padding: 10px 30px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.card{
+    margin: 20px 0;
+    display: grid;
+    margin: 10px;
+    grid-template-areas:
+    "image  texto";
+}
+
+.card img{
+    grid-area: image;
+    max-width: 400px;
+    max-height: auto;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+}
+
+.p{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    grid-area: texto;
+    background-color: white;
+    max-width: 900px;
+    font-size: 1.1rem;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+    height: auto;
+    padding: 30px;
+    line-height: 2.5rem;
+}
+
+
+.p li{
+    color: black;
+    text-transform: none;
+}
+
+
+@media (max-width: 1396px) 
+{
+
+    #header{
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        max-width: 100%;    
+        background-color: var(--secondary-purple);
+        box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+    }
+
+    .nav-list{
+        display:inline-flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid rgba(245, 222, 179, 0);
+    }
+
+    .logo, .label{
+        display: none;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        scroll-padding-top: 100px;
+
+    }
+
+    .card img{
+        grid-area: image;
+        max-width: 530px;
+        max-height: auto;
+        box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+    }
+
+    .card{
+        margin: 20px;
+    }
+
+
+}
+
+@media (max-width: 1060px) {
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        max-width: 650px;
+        margin: 20px;
+    }
+
+}
+
+
+@media (max-width: 922px) {
+    .nav-list li{
+        margin: 2px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid rgba(245, 222, 179, 0);
+        font-size: 0.9rem;
+    }
+
+    .nav-list{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 500px;
+    }
+}
+
+@media (max-width: 528px) {
+    
+
+    .nav-list li{
+        margin: 2px;
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        border: 2px solid rgba(245, 222, 179, 0);
+        font-size: 0.9rem;
+    }
+
+    .nav-list{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        min-width: 390px;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        margin: 20px auto;
+        max-width: 350px;
+    }
+
 }
