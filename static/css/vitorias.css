@@ -111,10 +111,12 @@ li, a{
     font-size: 1.9rem;
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: var(--primary-red);
+    background-color: var(--primary-purple);
     padding: 10px 30px;
     margin: 20px 0;
     text-align: center;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+
 }
 
 .card{

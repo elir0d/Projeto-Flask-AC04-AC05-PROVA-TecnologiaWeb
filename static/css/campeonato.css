@@ -115,6 +115,8 @@ li, a{
     padding: 10px 30px;
     margin: 20px 0;
     text-align: center;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+
 }
 
 .card{
