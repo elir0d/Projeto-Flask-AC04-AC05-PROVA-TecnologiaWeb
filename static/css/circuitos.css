@@ -1,0 +1,80 @@
+:root{
+    /* Primary palette */
+    --primary-blue:#203864;
+    --primary-red:#852a2a;
+    --primary-purple: #7030a0;
+    --primary-orange:#7f6000;
+
+    /*Secondary palette  */
+    --secondary-blue:#2b4154;
+    --secondary-red:#e64840;
+    --secondary-purple: #8e73e2;
+    --secondary-orange:#d25307;
+}
+
+html, body{
+    /*--------- image on full page--------------------------------- */
+    background-image: url(/static/img/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 0;
+    margin: 0;
+
+    overflow-x: hidden;
+}
+
+
+#header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+}
+
+li, a{
+    display: inline-block;
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style-type: none;
+    text-transform: uppercase;
+    font-weight: bolder;
+}
+
+.nav-list li{
+    margin: 0 10px;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    border: 2px solid rgba(245, 222, 179, 0);
+}
+
+.nav-list li:hover{
+    transform: scale(1.1, 1.1);
+    border: 2px solid white;
+}
+
+.competidores{
+    background-color: var(--primary-blue);
+}
+
+.campeonato{
+    background-color: var(--primary-red);
+}
+
+.vitorias{
+    background-color: var(--primary-purple);
+}
+
+.circuitos{
+    background-color: var(--primary-orange);
+}
