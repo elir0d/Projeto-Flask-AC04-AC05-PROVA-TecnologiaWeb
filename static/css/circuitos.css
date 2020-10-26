@@ -14,7 +14,7 @@
 
 html, body{
     /*--------- image on full page--------------------------------- */
-    background-image: url(/static/img/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
+    background-image: url(/static/img/fundo05.png); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -78,3 +78,4 @@ li, a{
 .circuitos{
     background-color: var(--primary-orange);
 }
+
