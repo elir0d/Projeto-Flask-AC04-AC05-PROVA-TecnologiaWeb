@@ -5,7 +5,6 @@ from flask import render_template
 
 #---------------------APP----------------------#
 app = Flask (__name__)
-    
 #------------------Routes----------------------#
 @app.route('/')
 @app.route('/index')
