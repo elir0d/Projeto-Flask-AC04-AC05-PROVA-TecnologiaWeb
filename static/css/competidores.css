@@ -106,46 +106,6 @@ li, a{
 
 }
 
-.team{
-    position: fixed;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bolder;
-    background-color: #203864;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    width: 800px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    background-color: #203864;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    width: 800px;
-}
-
-input{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px 0;
-}
-
-textarea{
-    border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
-}
-
 .label{
     position: fixed;
     color: white;

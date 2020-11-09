@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/index.css">
+    <link rel="stylesheet" href="/static/css/cadastro.css">
     <title>Cadastro de Equipe</title>
 </head>
 <body>
@@ -15,9 +15,19 @@
                 <li class="campeonato"><a href="campeonato">campeonato</a></li>
                 <li class="vitorias"><a href="vitorias">vitórias</a></li>
                 <li class="circuitos"><a href="circuitos">circuitos</a></li>
-                <li class="cadastro"><a href="cadastro">cadastro</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="cadastro">
+        <form action="POST">
+            <label for="nome" value="nome">Cadastro de equipe</label>
+            <input type="text" value="nome">
+            <label for="numero" value="numero"></label>
+            <input type="text" value="numero">
+            <label for="descicao" value="descricao"></label>
+            <textarea name="description" id="description" cols="30" rows="10">Escreva a descrição da sua equipe...</textarea>
+        </form>
+    </div>
 </body>
 </html>
