@@ -1,9 +1,11 @@
+#----------------Libraries---------------------#
 import os
 from flask import Flask
 from flask import render_template
 
+#---------------------APP----------------------#
 app = Flask (__name__)
-    
+#------------------Routes----------------------#
 @app.route('/')
 @app.route('/index')
 def index():
@@ -27,6 +29,8 @@ def circuitos():
 if __name__ == "__main__":
     port = int( os.environ.get("PORT", 5000) )
     app.run( host='0.0.0.0', port = port )
-
+    
+#--------------Development-run----------------#
 # if __name__ == '__main__':
 #     app.run('localhost', 5555)
+#---------------------------------------------#
