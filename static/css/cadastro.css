@@ -116,12 +116,10 @@ li, a{
     font-weight: bolder;
     background-color: #6f30a0d7;
     padding: 10px;
-    margin: 10px 0;
+    margin: 10px auto 10px 50px;
     text-align: center;
     border-radius: 10px;
     max-width: 600px;
-    margin-left: 50px;
-    margin-right: auto;
 }
 
 input{
@@ -138,7 +136,7 @@ textarea{
     text-transform: uppercase;
     width: 500px;
     height: auto;
-    min-height: 300px;
+    min-height: 250px;
     max-width: 500px;
     padding-left: 20px;
     padding-top: 10px;

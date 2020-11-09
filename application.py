@@ -1,10 +1,18 @@
 #----------------Libraries---------------------#
+
 import os
 from flask import Flask
+from flask import request
 from flask import render_template
+from flask import url_for
+from flask import redirect
+from flask_sqlalchemy import SQLAlchemy
+from connectionString import dbConnectString
+#-------------------APP------------------------#
 
-#---------------------APP----------------------#
 app = Flask (__name__)
+
+
 #------------------Routes----------------------#
 @app.route('/')
 @app.route('/index')
@@ -26,7 +34,7 @@ def vitorias():
 def circuitos():
     return render_template("circuitos.html")
 
-@app.route('/cadastro')
+@app.route( "/cadastro" )
 def cadastro():
     return render_template("cadastro.html")
     
