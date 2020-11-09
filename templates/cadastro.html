@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/css/index.css">
-    <title>Corrida Maluca</title>
+    <link rel="stylesheet" href="/static/css/cadastro.css">
+    <title>Cadastro de Equipe</title>
 </head>
 <body>
-    
     <header id="header">
         <a href="/"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/WackyRaces2017.png" alt="logo" class="logo"></a>
         <nav id="navbar">
@@ -16,9 +15,20 @@
                 <li class="campeonato"><a href="campeonato">campeonato</a></li>
                 <li class="vitorias"><a href="vitorias">vitórias</a></li>
                 <li class="circuitos"><a href="circuitos">circuitos</a></li>
-                <li class="cadastro"><a href="cadastro">cadastro</a></li>
             </ul>
         </nav>
     </header>
+
+    <div class="cadastro">
+        <form action="POST">
+            <label for="nome" value="nome">Cadastro de equipe</label>
+            <input type="text" placeholder="nome">
+            <label for="numero" value="numero"></label>
+            <input type="number" placeholder="numero" maxlength="2">
+            <label for="descricao" value="descricao"></label>
+            <textarea name="description" id="description" cols="30" rows="10">Escreva a descrição da sua equipe...</textarea>
+            <input type="button" value="cadastrar">
+        </form>
+    </div>
 </body>
 </html>

@@ -73,3 +73,7 @@ li, a{
 .circuitos{
     background-color: var(--primary-orange);
 }
+
+.cadastro{
+    background-color: #e64840;
+}

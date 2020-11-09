@@ -14,7 +14,7 @@
 
 html, body{
     /*--------- image on full page--------------------------------- */
-    background-image: url(/static/img/fundo02.png); 
+    background-image: url(/static/img/alexandre-christophel-christophel-alexandre-a4b-wacky-race.jpg); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -86,6 +86,10 @@ li, a{
     background-color: var(--primary-orange);
 }
 
+.cadastro{
+    background-color: #7030a0;
+}
+
 .content{
     display: flex;
     flex-direction: column;
@@ -103,8 +107,55 @@ li, a{
     display: flex;
     align-content: center;
     justify-content: center;
+}
+
+.cadastro{
+    position: fixed;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: #6f30a0d7;
+    padding: 10px;
+    margin: 10px auto 10px 50px;
+    text-align: center;
+    border-radius: 10px;
+    max-width: 600px;
+}
+
+input{
+    border-radius: 5px;
+    margin: 10px;
+    padding: 5px 0;
+    text-transform: uppercase;
+    padding-left: 20px;
+}
+
+textarea{
+    border-radius: 5px;
+    margin: 10px;
+    text-transform: uppercase;
+    width: 500px;
+    height: auto;
+    min-height: 250px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: center;
+    border-radius: 10px;
 
 }
+
 
 .label{
     position: fixed;
@@ -112,29 +163,29 @@ li, a{
     font-size: 1.9rem;
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: #203864;
+    background-color: var(--primary-orange);
     padding: 10px 30px;
-    margin: 10px 0;
+    margin: 0;
     text-align: center;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+
 }
 
 .card{
-    margin: 20px 0;
-    display: grid;
-    margin: 10px;
-    grid-template-areas:
-    "image  texto";
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .card img{
-    grid-area: image;
-    max-width: 400px;
+    max-width: 550px;
     max-height: auto;
     box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+    margin: 10px;
 }
 
 .p{
-    grid-area: texto;
     background-color: white;
     max-width: 500px;
     max-height: auto;
@@ -145,6 +196,21 @@ li, a{
 }
 
 
+
+.card h3{
+    display: inline-block;
+    color: white;
+
+    padding: 20px;
+    margin-top: 200px;
+    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    background-color: var(--secondary-blue);
+    margin: 0;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+
+}
 @media (max-width: 1396px) 
 {
 
