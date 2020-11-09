@@ -14,7 +14,7 @@
 
 html, body{
     /*--------- image on full page--------------------------------- */
-    background-image: url(/static/img/fundo02.png); 
+    background-image: url(/static/img/fundo03.png); 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -52,7 +52,7 @@ li, a{
     color: white;
     font-size: 1.5rem;
     text-decoration: none;
-    list-style-type: none;
+    /* list-style-type: none; */
     text-transform: uppercase;
     font-weight: bolder;
 }
@@ -103,47 +103,6 @@ li, a{
     display: flex;
     align-content: center;
     justify-content: center;
-
-}
-
-.team{
-    position: fixed;
-    color: white;
-    text-transform: uppercase;
-    font-weight: bolder;
-    background-color: #203864;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    width: 800px;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    color: white;
-    font-size: 1.5rem;
-    text-transform: uppercase;
-    font-weight: bolder;
-    background-color: #203864;
-    padding: 10px;
-    margin: 10px 0;
-    text-align: center;
-    border-radius: 10px;
-    width: 800px;
-}
-
-input{
-    border-radius: 5px;
-    margin: 10px;
-    padding: 5px 0;
-}
-
-textarea{
-    border-radius: 5px;
-    margin: 10px;
-    text-transform: uppercase;
 }
 
 .label{
@@ -152,10 +111,12 @@ textarea{
     font-size: 1.9rem;
     text-transform: uppercase;
     font-weight: bolder;
-    background-color: #203864;
+    background-color: var(--primary-red);
     padding: 10px 30px;
-    margin: 10px 0;
+    margin: 20px 0;
     text-align: center;
+    box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+
 }
 
 .card{
@@ -173,15 +134,27 @@ textarea{
     box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
 }
 
+.content-right{
+    display: flex;
+    align-items: flex-end;
+}
+
 .p{
-    grid-area: texto;
     background-color: white;
-    max-width: 500px;
-    max-height: auto;
-    padding: 15px;
+    max-width: 730px;
     font-size: 1.1rem;
     box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+    height: auto;
+    padding: 30px;
+    line-height: 2.5rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.p li{
     color: black;
+    text-transform: none;
 }
 
 
@@ -248,7 +221,7 @@ textarea{
 }
 
 
-@media (max-width: 922px) {
+@media (max-width: 824px) {
     .nav-list li{
         margin: 2px;
         padding: 10px;
@@ -264,9 +237,21 @@ textarea{
         flex-wrap: wrap;
         min-width: 500px;
     }
+
+    .p{
+        background-color: white;
+        max-width: 630px;
+        font-size: 1.1rem;
+        box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+        height: auto;
+        padding: 30px;
+        line-height: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
-@media (max-width: 528px) {
+@media (max-width: 714px) {
     
 
     .nav-list li{
@@ -290,6 +275,18 @@ textarea{
         flex-direction: column;
         margin: 20px auto;
         max-width: 350px;
+    }
+
+    .p{
+        background-color: white;
+        max-width: 400px;
+        font-size: 1.1rem;
+        box-shadow: 0px 0px 6px rgba(50, 50, 50, 0.77);
+        height: auto;
+        padding: 30px;
+        line-height: 2.5rem;
+        margin-left: auto;
+        margin-right: auto;
     }
 
 }
