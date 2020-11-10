@@ -69,7 +69,7 @@ def cadastrar():
             db.session.add( tempForm )
             db.session.commit()
         
-        return redirect(url_for('competidores'))
+        return redirect(url_for('cadastro'))
 
 # if __name__ == "__main__":
 #     port = int( os.environ.get("PORT", 5000) )
