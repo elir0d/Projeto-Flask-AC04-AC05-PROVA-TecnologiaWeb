@@ -20,14 +20,13 @@
     </header>
 
     <div class="cadastro">
-        <form action="POST">
-            <label for="nome" value="nome">Cadastro de equipe</label>
+        <form method="POST" action="" enctype="multipart/form-data">            <label for="nome" value="nome">Cadastro de equipe</label>
             <input type="text" placeholder="nome">
             <label for="numero" value="numero"></label>
             <input type="number" placeholder="numero" maxlength="2">
             <label for="descricao" value="descricao"></label>
-            <textarea name="description" id="description" cols="30" rows="10">Escreva a descrição da sua equipe...</textarea>
-            <input type="button" value="cadastrar">
+            <textarea name="description" id="description" cols="30" rows="10" placeholder="Escreva a descrição da sua equipe..."></textarea>
+            <input type="submit" value="cadastrar">
         </form>
     </div>
 </body>
