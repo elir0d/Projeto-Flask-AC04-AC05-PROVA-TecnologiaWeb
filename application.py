@@ -71,11 +71,11 @@ def cadastrar():
         
         return redirect(url_for('cadastro'))
 
-# if __name__ == "__main__":
-#     port = int( os.environ.get("PORT", 5000) )
-#     app.run( host='0.0.0.0', port = port )
-    
-#--------------Development-run----------------#
 if __name__ == "__main__":
-    app.run( debug = True )
+    port = int( os.environ.get("PORT", 5000) )
+    app.run( host='0.0.0.0', port = port )
+    
+#--------------LocalHost-run----------------#
+# if __name__ == "__main__":
+#     app.run( debug = True )
 #---------------------------------------------#
