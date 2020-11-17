@@ -70,11 +70,16 @@ def cadastrar():
             db.session.commit()
         
         return redirect(url_for('cadastro'))
+    
+@app.route('/competidores')
+def mostrarTodasAsEquipes():
+   return render_template('competidores.html', equipes = cadastroEquipe.query.all() )
+
 
 if __name__ == "__main__":
     port = int( os.environ.get("PORT", 5000) )
     app.run( host='0.0.0.0', port = port )
-    
+ 
 #--------------LocalHost-run----------------#
 # if __name__ == "__main__":
 #     app.run( debug = True )
